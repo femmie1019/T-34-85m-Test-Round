@@ -75,7 +75,7 @@ namespace M900
             CameraSlot cam = (CameraSlot)currentCamSlot.GetValue(cameraManager);
 
             if (cam == null || cam.name != "Aux sight (GAS)") return;
-            if (playerManager.CurrentPlayerWeapon.Name != "85mm ZiS-S-53") return;
+            if (playerManager.CurrentPlayerWeapon.Name != "85mm DT-5") return;
 
             AmmoType currentAmmo = playerManager.CurrentPlayerWeapon.FCS.CurrentAmmoType;
             int reticleId = (currentAmmo.Name == "M900 APFSDS-T") ? 0 : 2;
